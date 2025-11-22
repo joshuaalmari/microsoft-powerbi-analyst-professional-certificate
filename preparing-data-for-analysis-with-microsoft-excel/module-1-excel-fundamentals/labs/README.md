@@ -7,8 +7,8 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
 ### 🧪 Lab 1: Data Entry, Formatting, and Worksheet Management
 * **Scenario:** An executive based in the USA, required a financial report integrating external data from a PDF (`Exchange Rates.pdf`) into an existing Excel workbook (`Sample.xlsx`). The dataset required cleaning, international currency formatting, and structural reorganization for a presentation.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-adding-data-to-a-worksheet/)
-    * [📊 View Completed Workbook](./labs/lab-1-adding-data-to-a-worksheet/Sample_Completed.xlsx)
+    * [📂 View Lab Files](./lab-1-adding-data-to-a-worksheet/)
+    * [📊 View Completed Workbook](./lab-1-adding-data-to-a-worksheet/Sample_Completed.xlsx)
 
 #### Key Actions Performed:
 * **Data Cleaning & Structure:**
