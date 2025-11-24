@@ -34,7 +34,7 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
 * **Scenario:** The Analytics Team and Inventory Analyst required a two-part process on the product inventory file: first, reorganize the entire dataset for management review, and second, extract specific record counts via advanced filtering for analysis. All work was performed within a single workbook using dedicated sheets.
 * **Files:**
     * [📂 View Lab Files](./lab-2-sorting-and-filtering-data/)
-    * [📊 View Completed Workbook](./lab-2-sorting-and-filtering-data/Adventure%20Works%20Inventory_Completed.xlsx)
+    * [📊 View Completed Workbook](./lab-2-sorting-and-filtering-data/Adventure%20Works%20Inventory%20Completed.xlsx)
 
 #### 1. Data Reorganization (Sorting Focus)
 * **Objective:** Establish grouping logic (e.g., by vendor and stock level) on the initial data sheet.
