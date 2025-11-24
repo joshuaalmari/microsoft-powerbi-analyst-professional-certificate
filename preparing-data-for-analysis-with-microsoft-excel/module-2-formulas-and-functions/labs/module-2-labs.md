@@ -1,4 +1,4 @@
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
 The exercises in this module focus on building essential business reporting tools. The projects demonstrate the application of core mathematical functions to construct **financial pricing models** and generate **monthly performance dashboards** for executive review.
 
