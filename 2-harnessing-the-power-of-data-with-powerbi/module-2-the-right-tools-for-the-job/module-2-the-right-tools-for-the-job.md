@@ -1,4 +1,4 @@
-# 🛠️ Module 2: The Right Tools for the Job (Data Acquisition & Transformation)
+# 🛠️ Module 2: The Right Tools for the Job
 
 This module focuses on the critical backend processes of data analysis: identifying the right data, bringing it into the system (Ingestion), managing storage architectures, and cleaning it for analysis (Transformation). It introduces the **ETL** framework and **Microsoft Power Query** as the primary tool for shaping data.
 
@@ -57,12 +57,11 @@ To work effectively, components must be used in the correct sequence.
 
 ### 1. Extract (Gathering & Ingestion)
 Retrieving raw data from various sources.
-* **Methods:**
-    * **Manual Entry:** High risk of error, slow.
-    * **File-Based:** Importing Excel/CSV files.
-    * **Database Connections:** Direct SQL queries to live systems (efficient).
-    * **Web Scraping:** Automated extraction from websites.
-    * **Streaming:** Real-time data flow (e.g., IoT sensors).
+* **Manual Entry:** Direct typing (e.g., into a CRM). Simple but error-prone and unscalable.
+* **File-Based:** Importing Excel or CSV files. Common but difficult to manage with frequent updates.
+* **Database Connections:** Direct SQL queries to live systems. Efficient and provides real-time data.
+* **Web Scraping:** Automated extraction from websites (e.g., competitor pricing).
+* **Streaming:** Real-time data flow (e.g., IoT sensors) for immediate analysis.
 
 ### 2. Transform (Cleaning & Shaping)
 The most time-consuming phase. Raw data is rarely ready for analysis.
@@ -98,3 +97,7 @@ Data cleaning can happen at two stages. Choosing the right location is critical 
 * **Duplicates:** Artificially inflate sales numbers and skew averages.
 * **Null Values:** Gaps in data that can break calculations.
 * **Inconsistent Formatting:** Mixed date formats (MM/DD vs DD/MM) or mixed casing (e.g., "New York" vs "new york") prevents proper grouping.
+
+---
+
+### 📋 Practical Labs & Exercises
