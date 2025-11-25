@@ -7,8 +7,7 @@ The exercises in this module focus on the critical "pre-analysis" phase: evaluat
 ### 🧪 Lab 1: Dataset
 * **Objective:** Assess a raw product inventory file (`Adventure Works Inventory.xlsx`) to determine if it contains the necessary data points to track supplier price increases over time.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-dataset-evaluation/)
-    * [📊 View Analyzed Workbook](./labs/lab-1-dataset-evaluation/Adventure_Works_Inventory.xlsx)
+    * [📂 View Lab Files](./lab-1-dataset/)
 
 #### Key Actions Performed:
 * **Field Identification:** Reviewed schema to locate critical fields (`DateEntered`, `ProductName`, `Supplier`, `UnitPrice`) required for longitudinal price tracking.
