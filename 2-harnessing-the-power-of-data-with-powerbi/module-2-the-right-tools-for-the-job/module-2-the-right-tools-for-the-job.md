@@ -1,5 +1,6 @@
-# 🛠️ Module 2: The Right Tools for the Job
-This module focuses on the critical backend processes of data analysis: identifying the right data, bringing it into the system (Ingestion), and cleaning it for analysis (Transformation). It introduces the **ETL** framework and **Microsoft Power Query** as the primary tool for shaping data.
+# 🛠️ Module 2: The Right Tools for the Job (Data Acquisition & Transformation)
+
+This module focuses on the critical backend processes of data analysis: identifying the right data, bringing it into the system (Ingestion), managing storage architectures, and cleaning it for analysis (Transformation). It introduces the **ETL** framework and **Microsoft Power Query** as the primary tool for shaping data.
 
 ---
 
@@ -8,15 +9,35 @@ This module focuses on the critical backend processes of data analysis: identify
 Before analysis begins, an analyst must define the business goal to determine what data is required.
 
 ### Types of Data
-* **Structured Data:** Highly organized and formatted, typically found in relational databases (SQL) or ERP systems (Enterprise Resource Planning). Examples include sales tables, inventory lists, and customer records.
-* **Semi-Structured Data:** Contains tags or markers to separate elements but lacks a rigid schema. Examples include sensor data (logs), JSON files, or email metadata.
-* **Unstructured Data:** Lacks a predefined data model, making it the most difficult to analyze. Examples include social media posts, videos, images, and free-text customer reviews.
+* **Structured Data:** Data organized in a specific format (rows and columns) making it easily searchable.
+    * *Examples:* Sales transactions, customer information, inventory levels, financial records.
+* **Semi-Structured Data:** Contains tags or markers to separate elements but lacks a rigid schema.
+    * *Examples:* Sensor data (logs), JSON files, email metadata.
+* **Unstructured Data:** Data that does not fit neatly into rows and columns, making it harder to analyze without advanced processing.
+    * *Examples:* Social media posts, customer reviews, images, video, and audio files.
 
 ### Evaluation Criteria
 When selecting data sources, analysts must ask:
 * **Relevance:** Does this data directly answer the business question?
 * **Granularity:** Is the data detailed enough (e.g., daily vs. monthly sales)?
-* **Connectivity:** Can we connect this external data (e.g., foot traffic sensors) with internal data (sales figures) to find correlations?
+* **Connectivity:** Can we connect this external data with internal data to find correlations?
+
+---
+
+## 💾 Data Storage and Management Architectures
+
+Choosing where to store data depends on security, cost, and scalability needs.
+
+| Storage Type | Description | Best Use Case |
+| :--- | :--- | :--- |
+| **On-Premises** | Data stored on physical hardware within the company's facilities. Offers full control and strict security but has high maintenance costs. | Storing highly sensitive or core operational data (e.g., Financials, HR records) where compliance is critical. |
+| **Cloud-Based** | Data stored on remote servers managed by third-party providers (e.g., Azure). Offers high scalability and accessibility via the Internet. | Storing collaborative data (Market Research) or high-volume unstructured data (Social Media) that needs to grow quickly. |
+| **Hybrid** | A combination of both. Sensitive data stays on-premises, while less sensitive or high-volume data moves to the cloud. | Organizations undergoing digital transformation or those needing to balance strict security with modern flexibility. |
+
+### Case Study: AdventureWorks Data Strategy
+* **Sales & Manufacturing Data:** Structured and sensitive. Requires a solution that allows for scalability due to growth, but also strict access control.
+* **Financial Data:** Highly sensitive and structured. Requires the strictest security (likely On-Premises or secured Private Cloud).
+* **Social Media & Reviews:** Unstructured and high volume. Requires a Cloud solution to handle the massive scalability needs for storage.
 
 ---
 
@@ -45,7 +66,7 @@ Retrieving raw data from various sources.
 
 ### 2. Transform (Cleaning & Shaping)
 The most time-consuming phase. Raw data is rarely ready for analysis.
-* **Tasks:** Removing duplicates, handling missing values (nulls), splitting columns, changing data types (e.g., text to date), and standardizing units of measure (e.g., currency conversion).
+* **Tasks:** Removing duplicates, handling missing values (nulls), splitting columns, changing data types (e.g., text to date), and standardizing units of measure.
 
 ### 3. Load (Storage)
 Writing the cleaned data into the destination (Data Warehouse or Power BI Data Model).
@@ -59,7 +80,7 @@ Power Query is the dedicated **Data Transformation Engine** within Power BI (and
 
 ### Core Features
 * **Connectivity:** Connects to hundreds of sources (SQL, Web, Excel, Salesforce).
-* **No-Code Transformation:** Provides a graphical interface to clean data without writing code (though it uses the **M Language** in the background).
+* **No-Code Transformation:** Provides a graphical interface to clean data without writing code (uses **M Language** in the background).
 * **Repeatable Workflows:** Power Query records every step (e.g., "Removed Top 3 Rows", "Changed Type"). When data is refreshed, these steps run automatically, saving hours of manual work.
 
 ---
