@@ -34,10 +34,10 @@ Choosing where to store data depends on security, cost, and scalability needs.
 | **Cloud-Based** | Data stored on remote servers managed by third-party providers (e.g., Azure). Offers high scalability and accessibility via the Internet. | Storing collaborative data (Market Research) or high-volume unstructured data (Social Media) that needs to grow quickly. |
 | **Hybrid** | A combination of both. Sensitive data stays on-premises, while less sensitive or high-volume data moves to the cloud. | Organizations undergoing digital transformation or those needing to balance strict security with modern flexibility. |
 
-### Case Study: AdventureWorks Data Strategy
-* **Sales & Manufacturing Data:** Structured and sensitive. Requires a solution that allows for scalability due to growth, but also strict access control.
-* **Financial Data:** Highly sensitive and structured. Requires the strictest security (likely On-Premises or secured Private Cloud).
-* **Social Media & Reviews:** Unstructured and high volume. Requires a Cloud solution to handle the massive scalability needs for storage.
+### Applied Data Strategy: Storage Mapping Examples
+* **Sales & Manufacturing Data (Structured/Sensitive):** Requires a solution that allows for high scalability due to growth, but also strict access control (Hybrid or Private Cloud).
+* **Financial Data (Structured/Highly Sensitive):** Requires the strictest security protocols and compliance (On-Premises or Secured Private Cloud).
+* **Social Media & Reviews (Unstructured/High Volume):** Requires a solution capable of handling massive, rapid scaling at a lower cost (Public Cloud).
 
 ---
 
