@@ -31,18 +31,26 @@ This module focuses on the practical application of Power Query to clean, reshap
 
 ---
 
-### 🧪 Lab 3: Appending & Merging Data
-* **Objective:** Consolidate data from multiple sources into a single analytical view. This involved stacking historical sales files (Append) and enriching sales data with product details (Merge).
+### 🧪 Lab 3: Appending two tables
+* **Objective:** Integrate sales records from a newly acquired subsidiary into the main corporate dataset. The goal was to stack two datasets with different column names into a single, unified "Master Sales" table.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-combining-data/)
-    * [📊 View Combined Report](./labs/lab-3-combining-data/Combined_Sales_Analysis.pbix)
+    * [📂 View Lab Files](./lab-3-appending-data/raw-files)
+    * [📊 View Consolidated Model](./lab-3-appending-data/Appending%20Two%20Tables.pbix)
 
-#### Part A: Appending (Stacking)
-* **Scenario:** Merging a legacy sales file with a new subsidiary's sales file.
-* **Action:** Renamed columns in the subsidiary file (e.g., changing `Quantity` to `OrderQty`) to match the primary schema.
-* **Result:** Used **"Append Queries as New"** to create a "Consolidated Sales" table containing all records from both sources.
+#### Key Actions Performed:
+* **Schema Normalization:** Manually renamed columns in the subsidiary's file (e.g., changing `Quantity` to `OrderQty`) to strictly match the headquarters' naming convention, preventing data fragmentation.
+* **Appending:** Used **"Append Queries as New"** to create a master table containing all records from both the original `AdventureWorksSales` and the external `OtherSales` files.
+* **Validation:** Verified row counts to ensure no records were lost during the consolidation process.
 
-#### Part B: Merging (Joining)
-* **Scenario:** Enriching a transactional `Sales` table with product details from a separate `Product` lookup table.
-* **Action:** Performed a **Left Outer Join** using `ProductKey` as the common identifier.
-* **Result:** Expanded the new `Product` column to bring in the `Product Name`, allowing sales to be analyzed by name rather than just ID.
+---
+
+### 🧪 Lab 4: Merging two data sources
+* **Objective:** Create a comprehensive sales view by joining transactional data with product details. The task involved linking a high-volume Sales table with a separate Product lookup table to bring in descriptive names and pricing.
+* **Files:**
+    * [📂 View Lab Files](./lab-4-merging-data/raw-files)
+    * [📊 View Enriched Model](./labs/lab-4-merging-data/Merging%20Two%20Data%20Sources.pbix)
+
+#### Key Actions Performed:
+* **Relationship Mapping:** Identified `ProductKey` as the common unique identifier (Join Key) between the two datasets.
+* **Merging:** Performed a **Left Outer Join** to keep all sales transactions while pulling in matching details from the `Product` table.
+* **Column Expansion:** Expanded the merged `Product` table column to select specific fields (`Product Name`, `Unit Price`) while removing redundant keys (`ResellerKey`, `EmployeeKey`) to keep the model clean.
