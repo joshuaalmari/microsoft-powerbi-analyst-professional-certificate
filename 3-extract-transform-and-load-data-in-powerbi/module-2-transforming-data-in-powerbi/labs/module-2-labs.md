@@ -21,8 +21,8 @@ This module focuses on the practical application of Power Query to clean, reshap
 ### 🧪 Lab 2: Apply a Pivot
 * **Objective:** Transform a flat list of product details (`Product-Color Model.xlsx`) into a summary table that displays the count of products per color in a matrix format.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-apply-a-pivot/)
-    * [📊 View Pivoted Model](./labs/lab-2-apply-a-pivot/Product_Color_Pivot.pbix)
+    * [📂 View Lab Files](./lab-2-apply-a-pivot/)
+    * [📊 View Pivoted Model](./lab-2-apply-a-pivot/Apply%20a%20Pivot.pbix)
 
 #### Key Actions Performed:
 * **Column Management:** Removed unnecessary columns (`Product Name`) to focus the aggregation on Color and Model.
