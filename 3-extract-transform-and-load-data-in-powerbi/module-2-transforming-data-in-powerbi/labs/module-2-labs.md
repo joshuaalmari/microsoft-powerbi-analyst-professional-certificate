@@ -1,4 +1,4 @@
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
 This module focuses on the practical application of Power Query to clean, reshape, and combine data. The exercises simulate real-world data preparation tasks required before analysis can begin.
 
@@ -8,7 +8,7 @@ This module focuses on the practical application of Power Query to clean, reshap
 * **Objective:** Clean a raw sales dataset (`SalesFile.xlsx`) containing common data quality issues such as nulls, mixed data types, and duplicates to ensure accurate reporting.
 * **Files:**
     * [📂 View Lab Files](./labs/lab-1-preparing-a-dataset/)
-    * [📊 View Cleaned Dataset](./labs/lab-1-preparing-a-dataset/Sales_Cleaned.pbix)
+    * [📊 View Cleaned Dataset](./labs/lab-1-preparing-a-dataset/Preparing%20a%20Dataset.pbix)
 
 #### Key Actions Performed:
 * **Handling Nulls:** Replaced null values in numeric columns (`Units Sold`, `Sales`, `Profit`) with `0` to allow for aggregation, and filled missing dates with a default standard value.
