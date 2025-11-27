@@ -26,7 +26,7 @@ The labs in this module focus on establishing the fundamental data pipeline. The
 * **Objective:** Eliminate the manual workload of daily reporting by creating an automated data pipeline. The task involves moving a local dataset to the cloud and configuring a time-based trigger to refresh the data automatically every night.
 * **Files:**
     * [📂 View Lab Files](./lab-2-implementing-triggers/)
-    * [📊 View Automation Config](./lab-2-implementing-triggers/Automation_Setup_Guide.pdf)
+    * [📊 View Automation Config](./lab-2-implementing-triggers/Implementing%20Triggers%20(Documentation).pdf)
 
 #### Key Actions Performed:
 * **Cloud Ingestion:**
