@@ -34,8 +34,8 @@ This module focuses on the practical application of Power Query to clean, reshap
 ### 🧪 Lab 3: Appending two tables
 * **Objective:** Integrate sales records from a newly acquired subsidiary into the main corporate dataset. The goal was to stack two datasets with different column names into a single, unified "Master Sales" table.
 * **Files:**
-    * [📂 View Lab Files](./lab-3-appending-data/raw-files)
-    * [📊 View Consolidated Model](./lab-3-appending-data/Appending%20Two%20Tables.pbix)
+    * [📂 View Lab Files](./lab-3-appending-two-tables/raw-files)
+    * [📊 View Consolidated Model](./lab-3-appending-two-tables/Appending%20Two%20Tables.pbix)
 
 #### Key Actions Performed:
 * **Schema Normalization:** Manually renamed columns in the subsidiary's file (e.g., changing `Quantity` to `OrderQty`) to strictly match the headquarters' naming convention, preventing data fragmentation.
@@ -47,8 +47,8 @@ This module focuses on the practical application of Power Query to clean, reshap
 ### 🧪 Lab 4: Merging two data sources
 * **Objective:** Create a comprehensive sales view by joining transactional data with product details. The task involved linking a high-volume Sales table with a separate Product lookup table to bring in descriptive names and pricing.
 * **Files:**
-    * [📂 View Lab Files](./lab-4-merging-data/raw-files)
-    * [📊 View Enriched Model](./labs/lab-4-merging-data/Merging%20Two%20Data%20Sources.pbix)
+    * [📂 View Lab Files](./lab-4-merging-two-data-sources/raw-files)
+    * [📊 View Enriched Model](./lab-4-merging-two-data-sources/Merging%20Two%20Data%20Sources.pbix)
 
 #### Key Actions Performed:
 * **Relationship Mapping:** Identified `ProductKey` as the common unique identifier (Join Key) between the two datasets.
