@@ -8,8 +8,8 @@ This final module features a comprehensive capstone project that consolidates al
 ### 🏆 Final Project: Transforming Multiple Data Sources
 * **Objective:** Construct a clean, consolidated sales dataset for detailed store analysis. The project involves ingesting raw order data from multiple years, optimizing the schema by removing unnecessary fields, detecting and resolving data quality issues, and merging transactional details into a single master table.
 * **Files:**
-    * [📂 View Project Files](./final-project)
-    * [📊 View Final Model](./final-project/Transforming%20Multiple%20Data%20Sources.pbix)
+    * [📂 View Project Files](./)
+    * [📊 View Final Model](./Transforming%20Multiple%20Data%20Sources.pbix)
 
 #### Key Actions Performed:
 * **Data Optimization:**
