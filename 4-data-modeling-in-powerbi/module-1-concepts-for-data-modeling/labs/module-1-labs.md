@@ -1,5 +1,5 @@
 
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
 The exercises in this module guide the learner through the evolution of data modeling. The projects start with basic Flat Schemas (single-source and multi-source), progress to the industry-standard Star Schema, and conclude with advanced Normalization techniques for Snowflake Schemas.
 
