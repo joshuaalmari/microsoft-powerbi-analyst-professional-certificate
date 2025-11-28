@@ -1,4 +1,4 @@
-# 🏗️ Module 1: Data Modeling Fundamentals
+# 🏗️ Module 1: Concepts for Data Modeling
 
 This module initiates **Course 4: Data Modeling in Power BI**. It shifts focus from data preparation to **Data Modeling**—the process of defining relationships between tables to enable accurate reporting. It covers schema design, cardinality, normalization, and the specific configuration of table and column properties to optimize performance and usability.
 
