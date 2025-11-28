@@ -97,4 +97,9 @@ Relationships are the "wires" that allow filters to flow from one table to anoth
 
 ### Granularity
 * **Definition:** The level of detail in the data (e.g., Transaction-level vs. Daily Summary) .
-* **Impact:** High granularity allows deep analysis but increases file size. Relationships can only be built between tables with matching granularity .
+* **Impact:** High granularity allows deep analysis but increases file size. Relationships can only be built between tables with matching granularity.
+
+### Resolving Common Challenges
+* **Inferior Performance:** Often caused by complex calculations on flat schemas. *Solution:* Normalize columns into dimension tables.
+* **Inconsistent Data:** caused by duplicate entries. *Solution:* Enforce unique keys in dimension tables.
+* **Limited Scalability:** Flat files cannot grow with the business. *Solution:* Transition to a Star Schema.
