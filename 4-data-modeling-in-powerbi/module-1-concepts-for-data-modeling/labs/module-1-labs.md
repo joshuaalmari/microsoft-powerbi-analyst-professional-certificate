@@ -56,8 +56,8 @@ The exercises in this module guide the learner through the evolution of data mod
 ### 🧪 Lab 4: Changing your Star Schema into a Snowflake Schema
 * **Objective:** Optimize the model for data integrity by **Normalizing** the Product dimension. The goal was to split a single wide dimension into a hierarchy of related tables.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-4-snowflake-schema/)
-    * [📊 View Snowflake Model](./labs/lab-4-snowflake-schema/Snowflake_Schema_Configured.pbix)
+    * [📂 View Lab Files](./lab-4-changing-your-star-schema-into-a-snowflake-schema/)
+    * [📊 View Snowflake Model](./lab-4-changing-your-star-schema-into-a-snowflake-schema/Changing%20your%20Star%20Schema%20into%20a%20Snowflake%20Schema.pbix)
 
 #### Key Actions Performed:
 * **Normalization via DAX:**
