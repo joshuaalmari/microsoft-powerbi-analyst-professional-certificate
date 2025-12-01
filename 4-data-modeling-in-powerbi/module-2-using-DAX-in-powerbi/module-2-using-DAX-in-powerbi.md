@@ -833,6 +833,3 @@ DIVIDE(
     SalesPriorYear
 )
 ```
-
-rich reporting.
-
