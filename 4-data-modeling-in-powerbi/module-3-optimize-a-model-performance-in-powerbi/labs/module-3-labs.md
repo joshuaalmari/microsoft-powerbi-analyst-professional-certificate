@@ -8,7 +8,7 @@ This module's exercises focus on performance tuning and optimization. The projec
 * **Objective:** Diagnose and fix a sluggish report caused by an inefficient relationship structure. The goal was to identify the specific relationship bottleneck and adjust its properties to improve query speed.
 * **Files:**
     * [📂 View Lab Files](./lab-1-improving-data-model-performance/)
-    * [📊 View Optimized Model](./lab-1-improving-data-model-performance/AdventureWorksSales%20Final.pbix)
+    * [📊 View Optimized Model](./lab-1-improving-data-model-performance/AdventureWorksSales%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Performance Diagnosis:** Used the **Model View** to inspect the schema and identify a **Many-to-Many** relationship between the `Customers` and `Orders` tables causing ambiguity and slowness.
