@@ -1,15 +1,43 @@
-
 ## 📋 Practical Labs & Exercises
 
-This module's exercises focus on troubleshooting performance issues and implementing advanced storage strategies. The projects involve auditing slow reports, optimizing DirectQuery settings, and building aggregation tables to handle massive datasets efficiently.
+This module's exercises focus on performance tuning and optimization. The projects involves auditing report speed, reducing model bloat, optimizing live connections, and implementing advanced aggregation strategies to handle massive datasets.
 
 ---
 
-### 🧪 Lab 1: Optimizing a DirectQuery model
+### 🧪 Lab 1: Improving data model performance
+* **Objective:** Diagnose and fix a sluggish report caused by an inefficient relationship structure. The goal was to identify the specific relationship bottleneck and adjust its properties to improve query speed.
+* **Files:**
+    * [📂 View Lab Files](./lab-1-improving-data-model-performance/)
+    * [📊 View Optimized Model](./lab-1-improving-data-model-performance/AdventureWorksSales%20Final.pbix)
+
+#### Key Actions Performed:
+* **Performance Diagnosis:** Used the **Model View** to inspect the schema and identify a **Many-to-Many** relationship between the `Customers` and `Orders` tables causing ambiguity and slowness.
+* **Relationship Tuning:**
+    * Modified the **Cardinality** from "Many-to-Many" to **"One-to-Many"** to accurately reflect the data structure.
+    * Changed the **Cross-filter direction** from "Both" to **"Single"** to reduce the processing load required to propagate filters.
+
+---
+
+### 🧪 Lab 2: Optimizing the columns and Auto date/time
+* **Objective:** Optimize a data model by reducing its memory footprint. The task involved identifying redundant metadata and disabling resource-heavy background features.
+* **Files:**
+    * [📂 View Lab Files](./labs/lab-2-optimizing-columns-and-auto-datetime/)
+    * [📊 View Lean Model](./labs/lab-2-optimizing-columns-and-auto-datetime/AdventureWorks_Lean.pbix)
+
+#### Key Actions Performed:
+* **Column Pruning:** Identified and **Deleted** the `Payment Method` column as it was unnecessary for the reporting requirements, freeing up memory.
+* **Metadata Optimization:**
+    * **Categorization:** Tagged the `Location` column as **City** to ensure correct map rendering.
+    * **Data Types:** Changed `Order Quantity` from Text to **Whole Number** to allow for aggregation and reduce storage size.
+* **Time Intelligence:** Accessed **Options > Current File > Data Load** and disabled **"Auto Date/Time"**, preventing Power BI from generating hidden date tables for every date column.
+
+---
+
+### 🧪 Lab 3: Optimizing a DirectQuery model
 * **Objective:** Optimize a sluggish report connected to a live SQL database. The goal was to reduce the "chattiness" of the report (too many queries) and improve table retrieval speeds.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-optimizing-a-directquery-model/)
-    * [📊 View Optimized Report](./labs/lab-1-optimizing-a-directquery-model/Optimized_Sales_Report.pbix)
+    * [📂 View Lab Files](./labs/lab-3-optimizing-directquery/)
+    * [📊 View Optimized Report](./labs/lab-3-optimizing-directquery/Optimized_Sales_Report.pbix)
 
 #### Key Actions Performed:
 * **Connection Setup:** Established a **DirectQuery** connection to the SQL database, selecting Fact and Dimension tables without importing data.
@@ -20,30 +48,15 @@ This module's exercises focus on troubleshooting performance issues and implemen
 
 ---
 
-### 🧪 Lab 2: Improving data model performance
-* **Objective:** Diagnose and fix a sluggish report caused by an inefficient relationship structure. The goal was to identify the specific relationship bottleneck and adjust its properties.
-* **Files:**
-    * [📂 View Lab Files](./labs/lab-2-improving-data-model-performance/)
-    * [📊 View Optimized Model](./labs/lab-2-improving-data-model-performance/AdventureWorksSales_Optimized.pbix)
-
-#### Key Actions Performed:
-* **Performance Diagnosis:** Used the **Data View** and **Model View** to inspect the schema and identify a relationship causing high latency.
-* **Relationship Tuning:**
-    * Modified the **Cross-filter direction** from "Both" (Bi-directional) to "Single" to reduce the processing load required to propagate filters.
-    * Adjusted **Cardinality** settings to align with the data structure (enforcing One-to-Many).
-* **Validation:** Verified that the report visuals loaded faster after simplifying the filter path.
-
----
-
-### 🧪 Lab 3: Creating aggregations
+### 🧪 Lab 4: Adding an aggregation
 * **Objective:** Optimize a model containing millions of rows by creating a pre-aggregated summary table. The task involved building a high-performance "Import" table to handle high-level queries while keeping the original detailed data available.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-creating-aggregations/)
-    * [📊 View Aggregation Model](./labs/lab-3-creating-aggregations/Aggregations_Configured.pbix)
+    * [📂 View Lab Files](./labs/lab-4-adding-an-aggregation/)
+    * [📊 View Aggregation Model](./labs/lab-4-adding-an-aggregation/Aggregations_Configured.pbix)
 
 #### Key Actions Performed:
-* **Aggregation Table Construction:**
-    * Duplicated the raw Fact table in Power Query.
-    * Used the **Group By** transformation to create a summary table (`SalesAgg`) grouped by `Order Date`, aggregating metrics like `TotalQuantityCount` and `SumTotalSales`.
-* **Storage Configuration:** Set the new Aggregation table to **Import Mode** (for speed) while leaving the original Fact table in **DirectQuery Mode** (for detail).
-* **Relationship Management:** Connected the new `SalesAgg` table to the `Date` dimension to ensure slicers worked across both the summary and detailed data.
+* **Aggregation Construction:** Created a `SalesAgg` table in Power Query by grouping data by `Order Date` and `Customer Key` to summarize Sales and Unit Price.
+* **Storage Management:**
+    * Set the `SalesAgg` table to **Import Mode** for maximum speed.
+    * Set the related Dimension tables (`Customer`, `Date`) to **Dual Mode** so they could work with both the aggregated data and the original DirectQuery fact table.
+* **Mapping:** Used the **Manage Aggregations** interface to map the summary columns (e.g., `SumSalesAmount`) to the detailed source columns, enabling Power BI to automatically switch tables based on the user's query.
