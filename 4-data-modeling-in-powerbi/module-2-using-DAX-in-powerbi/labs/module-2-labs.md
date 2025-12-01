@@ -48,7 +48,7 @@ The exercises in this module focus on replacing manual Excel calculations with d
 * **Objective:** Configure the data model to analyze sales based on **Shipping Date** (inactive relationship) rather than the default Order Date, without creating a redundant date table.
 * **Files:**
     * [📂 View Lab Files](./lab-4-adding-a-role-playing-dimension/)
-    * [📊 View Model](./labs-4-adding-a-role-playing-dimension/Adding%20a%20role-playing%20dimension.pbix)
+    * [📊 View Model](./lab-4-adding-a-role-playing-dimension/Adding%20a%20role-playing%20dimension.pbix)
 
 #### Key Actions Performed:
 * **Relationship Configuration:** Established two relationships between the `Sales` table and `Date` dimension: one **Active** (Order Date) and one **Inactive** (Shipping Date).
