@@ -72,8 +72,8 @@ The exercises in this module focus on replacing manual Excel calculations with d
 ### 🧪 Lab 6: Set up a common date table
 * **Objective:** Create and configure a mandatory **Date Dimension Table** using DAX to ensure all time intelligence functions operate correctly.
 * **Files:**
-    * [📂 View Lab Files](./labs/activity-set-up-a-common-date-table/)
-    * [📊 View Model](./labs/activity-set-up-a-common-date-table/Date_Table_Setup.pbix)
+    * [📂 View Lab Files](./lab-6-set-up-a-common-date-table/)
+    * [📊 View Model](./lab-6-set-up-a-common-date-table/Adventure-Works%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Table Creation:** Used the `CALENDAR` function to generate a dynamic single-column table with a contiguous set of dates covering the required sales history.
