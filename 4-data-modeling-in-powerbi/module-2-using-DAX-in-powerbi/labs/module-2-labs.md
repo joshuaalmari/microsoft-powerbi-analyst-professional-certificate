@@ -1,4 +1,4 @@
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
 The exercises in this module focus on replacing manual Excel calculations with dynamic DAX measures and advanced data architecture. These labs simulate the creation of financial and time-intelligence reporting tools using Power BI's formula language.
 
