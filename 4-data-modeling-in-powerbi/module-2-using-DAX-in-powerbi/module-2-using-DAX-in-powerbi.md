@@ -1,4 +1,4 @@
-# 🧮 Module 2: Data Analysis Expressions (DAX)
+# 🧮 Module 2: Using Data Analysis Expressions (DAX) in Power BI
 
 This module builds a solid foundation in **Data Analysis Expressions (DAX)**, the calculation language used in **Power BI**, **Excel Power Pivot**, and **Analysis Services**. It explains how DAX works with the data model, how formulas are structured, and how to use calculated columns, calculated tables, and measures to answer real business questions.
 
