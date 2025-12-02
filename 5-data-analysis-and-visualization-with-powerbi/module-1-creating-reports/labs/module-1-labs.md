@@ -31,15 +31,14 @@ The exercises in this module focus on the end-to-end creation of business report
 ---
 
 ### 🧪 Lab 3: Enhance the report with brand information
-* **Objective:** Professionalize the report by applying corporate branding standards. The goal was to ensure the dashboard aligned with the organization's visual identity using themes, logos, and consistent color palettes.
+* **Objective:** Update an existing report from **Lab 2: Using bars, columns, and lines** to include additional data insights while maintaining a clean design. The task involved adding a new visualization to display product breakdown and optimizing its layout.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-enhance-the-report-with-brand-information/)
-    * [📊 View Branded Report](./labs/lab-3-enhance-the-report-with-brand-information/Branded_Sales_Report.pbix)
+    * [📂 View Lab Files](./lab-3-enhance-the-report-with-brand-information/)
+    * [📊 View Report](./lab-3-enhance-the-report-with-brand-information/Enhance%20the%20report%20with%20brand%20information.pbix)
 
 #### Key Actions Performed:
-* **Theming:** Imported a custom **JSON Theme File** to automatically apply the company's specific color hex codes and font families to all visuals simultaneously.
-* **Visual Assets:** Inserted and positioned the **Company Logo** using the "Insert Image" feature to establish ownership and professional polish.
-* **Formatting:** Adjusted visual borders, shadows, and background transparencies to create a cohesive, "app-like" user interface.
+* **Product Breakdown:** Added a **Pie Chart** to display *Product Category* by *Order Quantity* for the months of February, March, and April.
+* **Decluttering:** Hid the **Legend** on the pie chart to reduce visual noise and improve the chart's readability within the report layout.
 
 ---
 
