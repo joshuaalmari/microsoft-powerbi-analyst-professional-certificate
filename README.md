@@ -17,12 +17,12 @@ The portfolio is structured according to the specialization's curriculum, with d
 | Course # | Folder | Primary Focus |
 | :--- | :--- | :--- |
 | **1** | [`1-preparing-data-for-analysis-with-microsoft-excel`](./1-preparing-data-for-analysis-with-microsoft-excel) | Excel fundamentals, formula syntax, data cleaning functions, and spreadsheet management. |
-| **2** | [`2-harnessing-the-power-of-data-with-power-bi`](./2-harnessing-the-power-of-data-with-power-bi) | The data analysis process, Power BI interface (Desktop/Service/Mobile), and ETL concepts. |
-| **3** | [`3-extract-transform-and-load-data-in-power-bi`](./3-extract-transform-and-load-data-in-power-bi) | Advanced Power Query techniques, M Language basics, data profiling, and complex data transformation. |
-| **4** | [`4-data-modeling-in-power-bi`](./4-data-modeling-in-power-bi) | Schema design (Star/Snowflake), managing relationships, and writing DAX measures (Time Intelligence). |
-| **5** | [`5-data-analysis-and-visualization-with-power-bi`](./5-data-analysis-and-visualization-with-power-bi) | Designing accessible reports, configuring advanced visuals, and using AI analytics features. |
-| **6** | [`6-creative-designing-in-power-bi`](./6-creative-designing-in-power-bi) | UI/UX design principles, color theory, data storytelling, and custom Python visuals. |
-| **7** | [`7-deploy-and-maintain-power-bi-assets-and-capstone-project`](./7-deploy-and-maintain-power-bi-assets-and-capstone-project) | Workspace management, deployment pipelines, Row-Level Security (RLS), and the final Capstone project. |
+| **2** | [`2-harnessing-the-power-of-data-with-powerbi`](./2-harnessing-the-power-of-data-with-powerbi) | The data analysis process, Power BI interface (Desktop/Service/Mobile), and ETL concepts. |
+| **3** | [`3-extract-transform-and-load-data-in-powerbi`](./3-extract-transform-and-load-data-in-powerbi) | Advanced Power Query techniques, M Language basics, data profiling, and complex data transformation. |
+| **4** | [`4-data-modeling-in-powerbi`](./4-data-modeling-in-powerbi) | Schema design (Star/Snowflake), managing relationships, and writing DAX measures (Time Intelligence). |
+| **5** | [`5-data-analysis-and-visualization-with-powerbi`](./5-data-analysis-and-visualization-with-powerbi) | Designing accessible reports, configuring advanced visuals, and using AI analytics features. |
+| **6** | [`6-creative-designing-in-powerbi`](./6-creative-designing-in-powerbi) | UI/UX design principles, color theory, data storytelling, and custom Python visuals. |
+| **7** | [`7-deploy-and-maintain-powerbi-assets-and-capstone-project`](./7-deploy-and-maintain-powerbi-assets-and-capstone-project) | Workspace management, deployment pipelines, Row-Level Security (RLS), and the final Capstone project. |
 | **8** | [`8-microsoft-pl-300-exam-preparation-and-practice`](./8-microsoft-pl-300-exam-preparation-and-practice) | Comprehensive review of all domains, mock exams, and certification strategy. |
 
 ---
