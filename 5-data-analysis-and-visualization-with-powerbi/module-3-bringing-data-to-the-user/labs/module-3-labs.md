@@ -7,8 +7,8 @@ The exercises in this module focus on the final stages of the reporting lifecycl
 ### 🧪 Lab 1: Building a dashboard
 * **Objective:** Construct a high-level executive summary dashboard by consolidating key insights from multiple separate reports (Sales, Customer, and Order reports).
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-building-a-dashboard/)
-    * [📄 View Dashboard Evidence](./labs/lab-1-building-a-dashboard/Executive_Dashboard_Screenshots.pdf)
+    * [📂 View Lab Files](./labs/lab-1-building-a-dashboard/raw-files)
+    * [📄 View Dashboard Evidence](./labs/lab-1-building-a-dashboard/Building-a-dashboard-documentation.pdf)
 
 #### Key Actions Performed:
 * **Visual Aggregation:** Pinned critical visuals (e.g., *Total Sales*, *Order Trends*) from three different source reports onto a single **Dashboard** canvas.
