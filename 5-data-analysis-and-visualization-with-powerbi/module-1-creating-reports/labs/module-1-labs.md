@@ -20,8 +20,8 @@ The exercises in this module focus on the end-to-end creation of business report
 ### 🧪 Lab 2: Using bars, columns, and lines
 * **Objective:** Refine the visual narrative by selecting the most appropriate chart types for specific data stories. The task involved replacing generic visuals with specialized Bar, Column, and Line charts to improve readability and trend analysis.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-using-bars-columns-and-lines/)
-    * [📊 View Report](./labs/lab-2-using-bars-columns-and-lines/Visual_Optimization.pbix)
+    * [📂 View Lab Files](./lab-2-using-bars-columns-and-lines/)
+    * [📊 View Report](./lab-2-using-bars-columns-and-lines/Using%20bars,%20columns,%20and%20lines.pbix)
 
 #### Key Actions Performed:
 * **Comparison Optimization:** Converted standard charts into **Clustered Bar Charts** to handle long category labels (e.g., Product Subcategories) effectively.
