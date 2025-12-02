@@ -8,8 +8,8 @@ This final module features a comprehensive capstone project that consolidates al
 ### 🏆 Final Project: Building and optimizing a data model
 * **Objective:** Revolutionize the organization's reporting capabilities by constructing an efficient data model. The task involved transforming raw sales and manufacturing data into a structured relational model to align products, markets, and strategies.
 * **Files:**
-    * [📂 View Project Files](./final-project/)
-    * [📊 View Final Model](./final-project/AdventureWorksSales%20-%20Final.pbix)
+    * [📂 View Project Files](./)
+    * [📊 View Final Model](./AdventureWorksSales%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Model Architecture:**
