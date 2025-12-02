@@ -21,7 +21,7 @@ The exercises in this module focus on enhancing User Experience (UX) through acc
 * **Objective:** Provide granular data details on demand without cluttering the main dashboard. The goal was to make complex charts accessible and understandable for users who need additional context.
 * **Files:**
     * [📂 View Lab Files](./lab-2-improving-accessibility-with-tooltips/)
-    * [📊 View Enhanced Report](./lab-2-improving-accessibility-with-tooltips/Tooltip_Configured.pbix)
+    * [📊 View Enhanced Report](./lab-2-improving-accessibility-with-tooltips/Improving-accessibility-with-tooltips.pbix)
 
 #### Key Actions Performed:
 * **Contextual Data:** Customized the standard **Tooltip** by dragging additional fields (e.g., *Order Quantity* and *Product Stock*) into the Tooltips field well.
