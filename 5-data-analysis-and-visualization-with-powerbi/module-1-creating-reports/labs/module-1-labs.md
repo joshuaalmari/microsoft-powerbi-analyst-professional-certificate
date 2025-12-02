@@ -7,8 +7,8 @@ This module's exercises focus on the practical application of data visualization
 ### 🧪 Lab 1: Create a sales report
 * **Objective:** Design an initial sales performance report to help the organization identify revenue trends and customer preferences. The goal was to transform raw transactional data into visual insights for strategic resource allocation.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-create-a-sales-report/)
-    * [📊 View Sales Report](./labs/lab-1-create-a-sales-report/Sales_Report_Basic.pbix)
+    * [📂 View Lab Files](./lab-1-create-a-sales-report/)
+    * [📊 View Sales Report](./lab-1-create-a-sales-report/Create-a-sales-report%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Category Analysis:** Created a **Clustered Column Chart** to visualize *Order Total* by *Product Category*, allowing stakeholders to instantly compare revenue across different inventory segments.
