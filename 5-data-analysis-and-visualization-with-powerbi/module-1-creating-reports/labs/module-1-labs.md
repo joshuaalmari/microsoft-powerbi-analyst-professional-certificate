@@ -45,8 +45,8 @@ The exercises in this module focus on the end-to-end creation of business report
 ### 🧪 Lab 4: Indicating business performance
 * **Objective:** Enable "at-a-glance" monitoring of critical business health metrics. The task involved adding Key Performance Indicators (KPIs) to provide immediate context on whether targets were being met.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-4-indicating-business-performance/)
-    * [📊 View KPI Dashboard](./labs/lab-4-indicating-business-performance/Performance_Dashboard.pbix)
+    * [📂 View Lab Files](./lab-4-indicating-business-performance/)
+    * [📊 View KPI Dashboard](./lab-4-indicating-business-performance/Indicating-business-performance.pbix)
 
 #### Key Actions Performed:
 * **Headline Metrics:** deployed **Card Visuals** to display high-level aggregates like *Total Revenue* and *Total Orders* as prominent headers.
