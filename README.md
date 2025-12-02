@@ -1,10 +1,10 @@
-# 📊 Microsoft Power BI Data Analyst Professional Certificate
+# 📊 Microsoft Power BI Data Analyst Portfolio
 
 ## Overview
 
 This repository documents my successful completion of the **Microsoft Power BI Data Analyst Professional Certificate**. It serves as a comprehensive, modular portfolio showcasing practical skills in data analysis, business intelligence (BI), and end-to-end reporting.
 
-The portfolio is structured according to the specialization's curriculum, with dedicated folders for each course, demonstrating proficiency in:
+The portfolio is structured according to the specialization's curriculum, with dedicated folders for each course demonstrating proficiency in:
 
 * **Data Preparation and Cleansing** (using Excel and Power Query)
 * **Data Modeling and Relationships**
@@ -14,16 +14,16 @@ The portfolio is structured according to the specialization's curriculum, with d
 
 ## Repository Structure: Course Curriculum
 
-| Course # | Folder Title | Primary Focus |
+| Course # | Folder | Primary Focus |
 | :--- | :--- | :--- |
-| **1** | `01_Preparing_Data_for_Analysis_with_Microsoft_Excel` | Data transformation, cleansing, and standardization using Excel functions. |
-| **2** | `02_Harnessing_the_Power_of_Data_with_Power_BI` | Introduction to Power BI, its interface, and basic data concepts. |
-| **3** | `03_Extract_Transform_and_Load_Data_in_Power_BI` | In-depth use of Power Query (ETL) for cleaning and shaping data. |
-| **4** | `04_Data_Modeling_in_Power_BI` | Creating robust data models, relationships, and understanding cardinality. |
-| **5** | `05_Data_Analysis_and_Visualization_with_Power_BI` | Creating measures using DAX and designing effective reports. |
-| **6** | `06_Creative_Designing_in_Power_BI` | Advanced report layout, theme application, and visual storytelling. |
-| **7** | `07_Deploy_and_Maintain_Power_BI_Assets_and_Capstone_Project` | Publishing reports, managing workspaces, security, and completing the final capstone project. |
-| **8** | `08_Microsoft_PL-300_Exam_Preparation_and_Practice` | Summarizing key exam topics and providing practice scenarios. |
+| **1** | [`1-preparing-data-for-analysis-with-microsoft-excel`](./1-preparing-data-for-analysis-with-microsoft-excel) | Excel fundamentals, formula syntax, data cleaning functions, and spreadsheet management. |
+| **2** | [`2-harnessing-the-power-of-data-with-power-bi`](./2-harnessing-the-power-of-data-with-power-bi) | The data analysis process, Power BI interface (Desktop/Service/Mobile), and ETL concepts. |
+| **3** | [`3-extract-transform-and-load-data-in-power-bi`](./3-extract-transform-and-load-data-in-power-bi) | Advanced Power Query techniques, M Language basics, data profiling, and complex data transformation. |
+| **4** | [`4-data-modeling-in-power-bi`](./4-data-modeling-in-power-bi) | Schema design (Star/Snowflake), managing relationships, and writing DAX measures (Time Intelligence). |
+| **5** | [`5-data-analysis-and-visualization-with-power-bi`](./5-data-analysis-and-visualization-with-power-bi) | Designing accessible reports, configuring advanced visuals, and using AI analytics features. |
+| **6** | [`6-creative-designing-in-power-bi`](./6-creative-designing-in-power-bi) | UI/UX design principles, color theory, data storytelling, and custom Python visuals. |
+| **7** | [`7-deploy-and-maintain-power-bi-assets-and-capstone-project`](./7-deploy-and-maintain-power-bi-assets-and-capstone-project) | Workspace management, deployment pipelines, Row-Level Security (RLS), and the final Capstone project. |
+| **8** | [`8-microsoft-pl-300-exam-preparation-and-practice`](./8-microsoft-pl-300-exam-preparation-and-practice) | Comprehensive review of all domains, mock exams, and certification strategy. |
 
 ---
 **Goal:** To provide a verifiable collection of artifacts, code, and documentation for potential employers and serve as an open learning resource for others pursuing the PL-300 certification path.
