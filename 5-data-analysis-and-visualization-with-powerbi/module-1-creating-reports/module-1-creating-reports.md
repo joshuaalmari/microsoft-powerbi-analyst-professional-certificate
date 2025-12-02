@@ -1,4 +1,4 @@
-# 📊 Module 1: Creating Reports and Visualizations
+# 📊 Module 1: Creating Reports
 
 This module initiates **Course 5: Data Analysis and Visualization with Power BI**. It focuses on the frontend of the data stack: transforming cleaned data into impactful visual stories. It covers the theoretical framework of Business Intelligence (BI), the technical layout of the Report Editor, specific report types by department, and the deep configuration of standard and specialist visualizations.
 
