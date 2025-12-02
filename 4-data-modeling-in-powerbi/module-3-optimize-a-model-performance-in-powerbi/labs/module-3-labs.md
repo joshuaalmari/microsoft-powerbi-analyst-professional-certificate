@@ -33,22 +33,7 @@ This module's exercises focus on performance tuning and optimization. The projec
 
 ---
 
-### 🧪 Lab 3: Optimizing a DirectQuery model
-* **Objective:** Optimize a sluggish report connected to a live SQL database. The goal was to reduce the "chattiness" of the report (too many queries) and improve table retrieval speeds.
-* **Files:**
-    * [📂 View Lab Files](./labs/lab-3-optimizing-directquery/)
-    * [📊 View Optimized Report](./labs/lab-3-optimizing-directquery/Optimized_Sales_Report.pbix)
-
-#### Key Actions Performed:
-* **Connection Setup:** Established a **DirectQuery** connection to the SQL database, selecting Fact and Dimension tables without importing data.
-* **Query Reduction:**
-    * Accessed **Options** to disable default cross-highlighting, preventing unnecessary queries when users click visuals.
-    * Added **"Apply" buttons** to the Filter Pane and Slicers, ensuring the database is only queried when the user finishes their selection.
-* **Storage Optimization:** Converted the Fact table from **DirectQuery** to **Import Mode** to demonstrate the performance gains of caching data in memory.
-
----
-
-### 🧪 Lab 4: Adding an aggregation
+### 🧪 Lab 3: Adding an aggregation
 * **Objective:** Optimize a model containing millions of rows by creating a pre-aggregated summary table. The task involved building a high-performance "Import" table to handle high-level queries while keeping the original detailed data available.
 * **Files:**
     * [📂 View Lab Files](./labs/lab-4-adding-an-aggregation/)
