@@ -34,8 +34,8 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 ### 🧪 Lab 3: Explaining the increase
 * **Objective:** Use automated AI tools to diagnose sudden changes in data trends without manual investigation.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-explaining-the-increase/)
-    * [📊 View Diagnostic Report](./labs/lab-3-explaining-the-increase/Sales_Fluctuation.pbix)
+    * [📂 View Lab Files](./lab-3-explaining-the-increase/)
+    * [📊 View Diagnostic Report](./lab-3-explaining-the-increase/Adventure-Works-Sales-Report%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **AI Analysis:** Right-clicked a sharp increase in the *Total Sales* line chart and selected **"Analyze > Explain the increase"**.
