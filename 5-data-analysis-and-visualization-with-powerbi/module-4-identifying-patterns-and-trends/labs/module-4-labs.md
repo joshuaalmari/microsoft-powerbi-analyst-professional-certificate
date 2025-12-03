@@ -47,8 +47,8 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 ### 🧪 Lab 4: Forecasting sales
 * **Objective:** Project future financial performance based on historical data patterns to aid in resource planning.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-4-forecasting-sales/)
-    * [📊 View Forecast Model](./labs/lab-4-forecasting-sales/Sales_Forecast.pbix)
+    * [📂 View Lab Files](./lab-4-forecasting-sales/)
+    * [📊 View Forecast Model](./lab-4-forecasting-sales/WorldPopulation%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Forecasting Model:** Activated the **Forecast** feature in the Analytics pane of a Line Chart plotting *Sales* over *Time*.
