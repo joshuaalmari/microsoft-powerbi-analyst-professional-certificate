@@ -24,7 +24,7 @@ Standard charts often fail when displaying hundreds of data points. Specialized 
 ### Dot Plot
 * **Concept:** A variation of a bar chart that uses dots at the end of value lines instead of thick bars.
 * **Benefit:** Uses significantly less "ink," allowing for a cleaner view when plotting dozens of categories on a single axis.
-* **Use Case:** displaying the distribution of a metric (e.g., Sales) across many categories (e.g., 50 States) where a bar chart would look cluttered.
+* **Use Case:** Displaying the distribution of a metric (e.g., Sales) across many categories (e.g., 50 States) where a bar chart would look cluttered.
 
 ### Small Multiples
 * **Concept:** Splitting a single complex chart into a **Grid** of smaller, identical charts—one for each category.
