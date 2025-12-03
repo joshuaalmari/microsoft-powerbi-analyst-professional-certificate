@@ -41,16 +41,28 @@ Techniques to categorize data into manageable chunks for analysis.
 Power BI integrates machine learning tools directly into the canvas to help analysts find answers faster without writing complex code.
 
 ### 1. Key Influencers Visual
-* **Purpose:** Diagnostic analysis ("Why is this happening?").
-* **Behavior:** Analyzes a specific metric (e.g., "Customer Churn" or "High Satisfaction") and identifies which factors have the biggest statistical impact on it.
-* **Output:**
-    * **Key Influencers:** "Being on a Month-to-Month contract increases the likelihood of Churn by 2.5x."
-    * **Top Segments:** Identifies specific profiles (e.g., "Customers who are Students and use Coupon Codes") that have a high probability of the outcome.
+This visual acts as a **Diagnostic Engine**. It uses regression analysis to answer the question: *"What factors drive a specific outcome?"*
+
+* **How it Works (Configuration):**
+    * **Analyze:** You input the metric you care about (e.g., *Customer Satisfaction Score*).
+    * **Explain By:** You input multiple potential drivers (e.g., *Country*, *Product Type*, *Subscription Length*).
+* **The Output (Two Views):**
+    1.  **Key Influencers Tab:** Identifies *individual* factors.
+        * *Example:* "When **Region** is **France**, the likelihood of a **High Score** increases by **2.5x**."
+        * *Visual:* A ranked list of bubbles showing the strongest drivers first.
+    2.  **Top Segments Tab:** Identifies *combinations* of factors (profiles).
+        * *Example:* "Segment 1 consists of **Students** who bought **Bikes**. This group has a **94%** satisfaction rate (compared to the 80% average)."
 
 ### 2. Decomposition Tree
-* **Purpose:** Root cause analysis and ad-hoc exploration.
-* **Behavior:** Allows users to break down a metric (e.g., Total Sales) by successive dimensions (e.g., Region $\rightarrow$ Store $\rightarrow$ Manager) in any order they choose.
-* **AI Splits:** The visual can automatically suggest the next split based on **High Value** (where is the highest metric?) or **Low Value**.
+This visual acts as an **Exploratory Root Cause Tool**. It allows users to break down a single metric into unlimited dimensions to find the "needle in the haystack."
+
+* **How it Works (Interaction):**
+    * The user starts with a headline metric (e.g., **Total Sales**).
+    * They click a **(+)** sign to choose which dimension to drill into next (e.g., first by *Region*, then by *Store*).
+* **The AI "Split" Feature:**
+    * Instead of manually choosing the next dimension, the user can select **"High Value"** or **"Low Value"** (indicated by a lightbulb icon).
+    * **Behavior:** Power BI automatically scans *all* available dimensions and expands the tree to show whichever path contains the highest (or lowest) value.
+    * *Use Case:* "I don't know *why* sales are down. I will click 'Low Value' to let the AI find the specific Store, Product, or Salesperson responsible for the drop."
 
 ### 3. Q&A Visual
 * **Purpose:** Natural Language Processing (NLP).
