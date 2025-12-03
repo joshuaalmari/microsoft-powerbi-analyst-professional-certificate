@@ -7,8 +7,8 @@ The exercises in this module focus on advanced visualization techniques, includi
 ### 🧪 Lab 1: Optimizing a report for mobile
 * **Objective:** Adapt an existing desktop sales report for executive consumption on mobile devices. The goal was to create a vertical, touch-friendly view for stakeholders traveling between meetings.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-optimizing-a-report-for-mobile/)
-    * [📄 View Mobile Layout](./labs/lab-1-optimizing-a-report-for-mobile/Mobile_Optimization_Screenshots.pdf)
+    * [📂 View Lab Files](./lab-1-optimizing-a-report-for-mobile/)
+    * [📊 View Mobile Layout](./lab-1-optimizing-a-report-for-mobile/Optimizing-a-report-for-mobile%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Layout Configuration:** Accessed the **Mobile Layout** view to redesign the report flow without affecting the desktop version.
