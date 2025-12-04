@@ -20,8 +20,7 @@ The exercises in this module focus on distributing insights effectively. The pro
 ### 🧪 Lab 2: Creating a QR code
 * **Objective:** Streamline report distribution for global sales managers. The task involved generating QR codes to allow instant access to specific region-relevant data visuals via mobile scanning.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-creating-a-qr-code/)
-    * [🖼️ View Generated Codes](./labs/lab-2-creating-a-qr-code/Sales_QR_Codes.png)
+    * [🖼️ View Documentation](./lab-2-creating-a-qr-code/Creating%20a%20QR%20code.pdf)
 
 #### Key Actions Performed:
 * **Tile-Level Access:** Opened a specific "Sales by Country" tile in **Focus Mode** and generated a QR code directly for that visual, enabling targeted sharing.
