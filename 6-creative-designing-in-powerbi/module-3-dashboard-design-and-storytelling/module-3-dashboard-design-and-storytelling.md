@@ -1,7 +1,6 @@
+# 🚀 Module 3: Dashboard Design, Distribution, and Optimization
 
-# 🚀 Module 3: Dashboard Design and Storytelling
-
-This module covers the final lifecycle of a Power BI project: transforming reports into high-level **Dashboards**, distributing them via **Publishing** and **Exporting**, and ensuring technical efficiency through **Performance Optimization** and **DAX Tuning**.
+This module covers the complete lifecycle of deploying Power BI solutions. It focuses on the architectural shift from Reports to **Dashboards**, the integration of **Rich Media** and **Real-Time Data**, and the technical strategies required to ensure **Performance Optimization** and **DAX Efficiency**.
 
 ---
 
@@ -12,58 +11,90 @@ Understanding the architectural difference is critical for effective distributio
 ### The Distinction
 | Feature | Report | Dashboard |
 | :--- | :--- | :--- |
-| **Purpose** | Deep analysis, slicing, dicing, and drilling. | High-level monitoring ("at-a-glance"). |
+| **Purpose** | Deep analysis, slicing, dicing, and drilling. | High-level monitoring ("at-a-glance" status). |
 | **Structure** | Multi-page file (`.pbix`). | Single-page "Canvas" (scrolling allowed). |
 | **Data Source** | Derived from a single dataset. | Can combine visuals from **multiple different reports/datasets**. |
 | **Interactivity** | High (Slicers, Filtering). | Low (Clicking a tile navigates to the source report). |
 | **Platform** | Desktop or Service. | **Power BI Service Only.** |
 
-### Creating Dashboards
-* **Pinning Visuals:** The process of taking a snapshot of a chart and adding it to a dashboard.
-    * **Limitation:** Pinned visuals are static. You cannot use slicers or drill-down features on them directly in the dashboard.
-* **Pinning Live Pages:** Pins an **entire report page** as a live tile.
-    * **Benefit:** Retains full interactivity (slicers, cross-filtering, drill-through) directly on the dashboard.
-* **Mobile Layout:** A dedicated authoring view in the Service that allows you to rearrange tiles into a vertical scroll for phones without affecting the desktop view.
+### Pinning Strategies
+* **Pin Visual:** Creates a static snapshot of a chart.
+    * *Limitation:* No interactivity (cannot cross-filter).
+* **Pin Live Page:** Pins an **entire report page** as a live tile.
+    * *Benefit:* Retains full interactivity (slicers, cross-filtering, drill-through) directly on the dashboard.
+* **Copying Tiles:** You can pin a tile **from one dashboard to another**, allowing you to move content between executive summaries without navigating back to the original report.
 
 ---
 
-## 🧠 2. Advanced Dashboard Features
+## 📱 2. Mobile Layout & Design
+
+Dashboards are frequently consumed on mobile devices. Design must account for smaller form factors.
+
+### Mobile Layout View
+A dedicated authoring environment in the Power BI Service.
+* **Behavior:** Creates a specific "Phone View" without altering the desktop dashboard.
+* **Configuration:**
+    * **Unpinning:** Hide less critical visuals from the mobile view to reduce scrolling fatigue.
+    * **Restructuring:** Resize and reorder tiles into a single vertical column for efficiency.
+
+---
+
+## 🎥 3. Rich Media & Real-Time Data
+
+Dashboards support more than just charts. They can include media to provide context and instructions.
+
+### Media Tiles
+* **Images:** Adding company logos or product photos. *Constraint:* Images must be hosted online with a public URL.
+* **Text Boxes:** Adding headings, narratives, or instructions directly to the canvas.
+* **Video:** Embedding **YouTube** or **Vimeo** links to provide video context (e.g., a CEO's quarterly update).
+* **Web Content:** Embedding external HTML content.
+
+### Real-Time Streaming
+Dashboards can display data that updates instantly, unlike Reports which require a scheduled refresh.
+1.  **Push Dataset:** Data is pushed to the Power BI Service database. Supports standard report visuals.
+2.  **Streaming Dataset:** Data is stored in a temporary cache. Visuals update instantly but have no history.
+3.  **PubNub:** Uses the PubNub SDK to stream low-latency data (e.g., IoT sensors) directly to the dashboard tile.
+
+---
+
+## 🧠 4. Advanced Dashboard Intelligence
 
 Power BI provides AI-driven tools to enhance dashboard usability without manual configuration.
 
 ### Quick Insights
 * **Definition:** An AI feature that automatically scans a dataset to find patterns, trends, and outliers.
-* **Usage:** Select a dataset in the Workspace > **"Get Quick Insights"**.
-* **Result:** Generates a gallery of discovery charts (e.g., "Category A has noticeably more outliers") which can be pinned directly to a dashboard.
+* **Usage:** Select a dataset > "Get Quick Insights".
+* **Result:** Generates a gallery of discovery charts which can be pinned directly to a dashboard.
 
 ### Q&A (Natural Language)
 * **Definition:** Allows users to ask questions in plain English (e.g., "Total sales by region") and receive an immediate visual answer.
 * **Integration:** Can be added as a visual on the canvas or accessed via the search bar on a Dashboard.
 * **Learning:** The engine adapts to user questions over time to improve accuracy.
 
+### QR Codes
+* **Function:** Generates a scannable code for a specific **Tile** or an entire **Report**.
+* **Use Case:** Placing a QR code on a warehouse shelf that links to the "Stock Level" tile for that specific product, bridging the physical and digital worlds.
+
 ---
 
-## ⚙️ 3. Report Management & Configuration
+## ⚙️ 5. Report Management & Distribution
 
 ### Page Properties
 * **Page Information:** Naming pages effectively to aid navigation and enabling "Tooltip" capability.
-* **Canvas Settings:** Controls dimensions.
-    * **16:9:** Standard widescreen (Default).
-    * **4:3:** Presentation/Print standard.
-    * **Letter/Tooltip:** Custom sizes for specific outputs.
+* **Canvas Settings:** Controls dimensions (16:9, 4:3, Letter). Critical for printing.
 * **Canvas Background:** The color/image *inside* the visual reporting area.
-* **Wallpaper:** The color/image *outside* the reporting area (the frame/background container).
+* **Wallpaper:** The color/image *outside* the reporting area (the frame).
 
 ### Distribution Strategy
-* **Publishing:** The process of moving a local `.pbix` file to the Power BI Service workspace. *Requirement:* You must save the file locally first.
-* **Pagination:** Splitting complex content across multiple pages to improve readability and load performance.
+* **Publishing:** The process of moving a local `.pbix` file to the Power BI Service workspace.
+* **Pagination:** Splitting complex content across multiple pages to improve readability.
 * **Exporting:**
-    * **PDF:** Generates a static document. *Constraint:* It captures the report exactly as it appears at the moment of export (it does not capture scrollable areas).
+    * **PDF:** Generates a static document. *Constraint:* Captures the report exactly as it appears at the moment of export (does not capture scrollable areas).
     * **PowerPoint:** Exports report pages as high-res images or live embedded slides.
 
 ---
 
-## ⚡ 4. Performance Optimization
+## ⚡ 6. Performance Optimization
 
 A slow report undermines user trust. This module covers diagnosing and fixing latency.
 
@@ -84,7 +115,7 @@ A built-in tool (View Tab) for diagnosing slow visuals.
 
 ---
 
-## 🛠️ 5. Advanced DAX: Variables & Troubleshooting
+## 🛠️ 7. Advanced DAX: Variables & Troubleshooting
 
 ### DAX Variables (`VAR`)
 Variables are used to store the result of a calculation in memory so it can be reused.
@@ -95,4 +126,14 @@ Variables are used to store the result of a calculation in memory so it can be r
 Variables are excellent for debugging complex measures.
 * **Technique:** Break a complex formula into multiple variables (e.g., `VAR CurrentSales`, `VAR PreviousSales`).
 * **Testing:** Temporarily change the `RETURN` statement to output just *one* variable to verify it calculates correctly before combining them.
-* **Visualization:** Use **Card Visuals** to display the output of individual variables during the debugging process to isolate where the logic fails.
+* **Visualization:** Use **Card Visuals** to display the output of individual variables during the debugging process.
+
+---
+
+## 📖 8. Data Storytelling Principles
+
+Data Storytelling is the skill of combining data, visuals, and narrative to communicate insights effectively.
+
+* **Context:** Numbers are meaningless without comparison (e.g., "Sales are up 20% **vs. Last Year**").
+* **Conflict/Resolution:** Structure the report to show a problem (The Conflict) and how the metrics point to a solution (The Resolution).
+* **Visual Hierarchy:** Use layout to guide the user through the story (Headline $\rightarrow$ Detail $\rightarrow$ Action).
