@@ -15,12 +15,14 @@ Understanding how data moves through an organization is critical for architectin
     * **Flat Files:** Excel or CSV files, often used for manual data entry or legacy exports.
     * **Web Services:** APIs and SaaS platforms.
 
-### 2. Processing (Transformation)
-* **Definition:** Converting raw data into a usable, analytical format.
-* **Tools:**
-    * **Power Query:** For cleaning, merging, and shaping.
-    * **SQL Views:** For filtering and joining data *before* it reaches Power BI.
-* **Key Actions:** Cleaning errors, defining relationships, and creating calculated columns.
+### 2. Processing (Transformation & Cleansing)
+Data must undergo two distinct refinement steps before analysis.
+* **Step A: Data Cleansing (Quality Control)**
+    * *Goal:* To examine, correct, and standardize incoming data.
+    * *Action:* Removing inconsistencies, fixing errors, and ensuring standard formats (e.g., standardizing address formats for shipping).
+* **Step B: Data Transformation (Shaping)**
+    * *Goal:* To modify the data structure for specific analytical needs.
+    * *Action:* Aggregating values (e.g., summing sales by region), applying calculations, and merging different datasets.
 
 ### 3. Visualization (Consumption)
 * **Definition:** Presenting the processed data to stakeholders via Reports and Dashboards to generate strategic insights.
