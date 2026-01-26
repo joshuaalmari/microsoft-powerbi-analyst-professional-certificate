@@ -23,7 +23,7 @@ The portfolio is structured according to the specialization's curriculum, with d
 | **5** | [`5-data-analysis-and-visualization-with-powerbi`](./5-data-analysis-and-visualization-with-powerbi) | Designing accessible reports, configuring advanced visuals, and using AI analytics features. |
 | **6** | [`6-creative-designing-in-powerbi`](./6-creative-designing-in-powerbi) | UI/UX design principles, color theory, data storytelling, and custom Python visuals. |
 | **7** | [`7-deploy-and-maintain-powerbi-assets-and-capstone-project`](./7-deploy-and-maintain-powerbi-assets-and-capstone-project) | Workspace management, deployment pipelines, Row-Level Security (RLS), and the final Capstone project. |
-| **8** | [`8-microsoft-pl-300-exam-preparation-and-practice`](./8-microsoft-pl-300-exam-preparation-and-practice) | Comprehensive review of all domains, mock exams, and certification strategy. |
+| **8** | [`8-microsoft-PL-300-exam-preparation-and-practice`](./8-microsoft-PL-300-exam-preparation-and-practice) | Comprehensive review of all domains, mock exams, and certification strategy. |
 
 ---
 **Goal:** To provide a verifiable collection of artifacts, code, and documentation for potential employers and serve as an open learning resource for others pursuing the PL-300 certification path.
